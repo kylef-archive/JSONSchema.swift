@@ -56,6 +56,7 @@ public class Draft202012Validator: Validator {
   ]
 
   let formats: [String: (Context, String) -> (AnySequence<ValidationError>)] = [
+    "date-time": validateDateTime,
     "ipv4": validateIPv4,
     "ipv6": validateIPv6,
     "uri": validateURI,

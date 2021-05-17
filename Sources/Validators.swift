@@ -145,7 +145,6 @@ func isEqual(_ lhs: NSObject, _ rhs: NSObject) -> Bool {
   return lhs == rhs
 }
 
-
 extension Sequence where Iterator.Element == ValidationError {
   func validationResult() -> ValidationResult {
     let errors = Array(self)
